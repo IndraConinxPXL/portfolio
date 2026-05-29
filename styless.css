@@ -96,13 +96,14 @@ p {
    ========================================== */
 .section-wrapper {
     max-width: 1200px;
-    margin: 0 auto;
+
+    margin: 4rem auto;
     padding: 0 2rem;
 }
 
 .section-heading {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-top: 4rem;
     position: relative;
     padding-bottom: 1rem;
 }
@@ -380,6 +381,7 @@ p {
 .info-card {
     background: var(--secondary);
     padding: 2.5rem;
+    margin: 2rem;
     border-radius: var(--radius-md);
     text-align: center;
     transition: all 0.4s var(--ease);
@@ -979,4 +981,132 @@ p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.carousel-wrap {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dot.active {
+    background: #111;
+}
+
+/* Contact sectie centreren */
+.contact-section {
+    text-align: center;
+}
+
+/* Zorg dat de box zelf in het midden van de pagina staat */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-details-box {
+    width: 100%;
+    max-width: 600px; /* Houdt het vak mooi compact */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* De individuele contactopties (Email, Telefoon, Locatie) centreren */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centreert de items horizontaal */
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-entry {
+    display: flex;
+    flex-direction: column; /* Zet emoji boven de tekst voor een strak gecentreerde look */
+    align-items: center;
+    text-align: center;
+}
+
+.contact-emoji {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Social media knoppen centreren */
+.social-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center; /* Centreert de icoontjes naast elkaar */
+    gap: 1rem;
+    margin-top: 1rem;
 }
